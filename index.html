@@ -1,0 +1,81 @@
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <script src="main.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet"/>
+    <title>Portfolio</title>
+  </head>
+  
+  <body>
+    <main>
+      <div id="home-page">
+        <div id="grid-container">
+          <!-- upper row-->
+          <div class="upper-left-content"></div>
+          <div class="top-content"></div>
+          <div class="upper-right-content"></div>
+
+          <!-- middle row-->
+          <div class="left-content" onclick="leftContentClick()"><div class="rotate-right"><nav><p>My Designs</p></nav></div></div> 
+          <div class="middle-content"><h1>Abigail Zalac.</h1><h1>UX/UI Design.</h1></div>
+          <div class="right-content" onclick="rightContentClick()"><div class="rotate-left"><nav><p>About Me</p></nav></div></div>   
+          
+          <!-- lower row-->
+          <div class="lower-left-content"></div>
+          <div class="bottom-content" id="bottom-content" onclick="bottomContentClick()"><nav><p>Contact</p></nav></div>
+          <div class="lower-right-content"></div>
+        </div>
+
+        <!-- left page animation -->
+        <div id="left-animation">
+          <div id="my-designs-page-content">
+            <nav><button class="exitBtn" onclick="exitLeft()">Back</button></nav>
+            <h2>Some of my designs</h2>
+
+            <p>Content coming soon</p>
+          </div>
+        </div>
+
+        <!-- right page animation -->
+        <div id="right-animation">
+          <div id="about-me-page-content">
+            <nav><button class="exitBtn" onclick="exitRight()">Back</button></nav>
+            <h2>Hi, I'm Abigail Zalac</h2><br>
+
+            <p>I'm studying software engineering at Conestoga College. My personal interests include:</p><br>
+            <ul>
+              <li>Programming</li>
+              <li>UX/UI design</li>
+              <li>Photography</li>
+              <li>Art</li>
+              <li>Making animations</li>
+              <li>Learning new languages</li>
+            </ul><br>
+            <p>Growing up, I worked on farms and learned about agriculture and gained interpersonal/communication skills.
+              I also often helped out in libraries providing IT support.</p><br>
+            <p>I'm constantly trying to learn new things and improve my skills, using everything
+              as a possible learning experience.</p>
+          </div>
+        </div>
+
+        <!-- bottom page animation -->
+        <div id="bottom-animation">
+          <div id="contact-page-content">
+            <nav><button class="exitBtn" onclick="exitBottom()">Back</button></nav>
+            <h2>How to reach me</h2>
+            <p>Email: azalac7839@conestogac.on.ca
+              <nav><a href = "mailto: azalac7839@conestogac.on.ca">Send email</a></nav></p>
+            <p>LinkedIn: Abigail Zalac
+              <nav><a href="https://www.linkedin.com/in/abigailzalac/" target="_blank">Take me there</a></nav></p>
+            <p>Github: amzalac
+              <nav><a href="https://github.com/amzalac" target="_blank">Take me there</a></nav></p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,240 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+    background-color: #998675;
+}
+#home-page {
+    position: relative;
+}
+
+/* Grid Styles*/
+#grid-container {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 22.5% 55% 22.5%;
+    grid-template-rows: 25% 50% 25%;
+    justify-content: space-around;
+    background-color: #b7a494;
+}
+.left-content {
+    margin-right: 0.5em;
+    background-color: #998675;
+    position: relative;
+    border-style: solid;
+    border-color: rgb(231, 231, 231);
+    border-width: 3px 3px 3px 0;
+    box-shadow: 0px 0px 0px 8px rgba(103, 103, 103, 0.3);
+
+    transition: width 4s, height 4s;
+}
+.middle-content {
+    background-color: #7b6c61;
+    border-style: solid;
+    border-color: rgb(231, 231, 231);
+    border-width: 3px 3px 3px 3px;
+    box-shadow: 0px 0px 0px 8px rgba(103, 103, 103, 0.3);
+}
+.right-content {
+    margin-left: 0.5em;
+    background-color: #998675;
+    position: relative;
+    border-style: solid;
+    border-color: rgb(231, 231, 231);
+    border-width: 3px 0 3px 3px;
+    box-shadow: 0px 0px 0px 8px rgba(103, 103, 103, 0.3);
+}
+.bottom-content {
+    margin-top: 0.5em;
+    background-color: #998675;
+    position: relative;
+    border-style: solid;
+    border-color: rgb(231, 231, 231);
+    border-width: 3px 3px 0 3px;
+    box-shadow: 0px 0px 0px 8px rgba(103, 103, 103, 0.3);
+}
+.top-content {
+    margin-bottom: 0.5em;
+    background-color: #998675;
+    border-style: solid;
+    border-color: rgb(231, 231, 231);
+    border-width: 0 3px 3px 3px;
+    box-shadow: 0px 0px 0px 8px rgba(103, 103, 103, 0.3);
+}
+.upper-left-content {
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+    background-color: #c5af9d;
+    border-style: solid;
+    border-color: rgb(231, 231, 231);
+    border-width: 0 3px 3px 0;
+    box-shadow: 0px 0px 0px 8px rgba(103, 103, 103, 0.3);
+}
+.lower-left-content {
+    margin-right: 0.5em;
+    margin-top: 0.5em;
+    background-color: #c5af9d;
+    border-style: solid;
+    border-color: rgb(231, 231, 231);
+    border-width: 3px 3px 0 0;
+    box-shadow: 0px 0px 0px 8px rgba(103, 103, 103, 0.3);
+}
+.upper-right-content {
+    margin-left: 0.5em;
+    margin-bottom: 0.5em;
+    background-color: #c5af9d;
+    border-style: solid;
+    border-color: rgb(231, 231, 231);
+    border-width: 0 0 3px 3px;
+    box-shadow: 0px 0px 0px 8px rgba(103, 103, 103, 0.3);
+}
+.lower-right-content {
+    margin-left: 0.5em;
+    margin-top: 0.5em;
+    background-color: #c5af9d;
+    border-style: solid;
+    border-color: rgb(231, 231, 231);
+    border-width: 3px 0 0 3px;
+    box-shadow: 0px 0px 0px 8px rgba(103, 103, 103, 0.3);
+}
+
+/* Font + Button Styles*/
+.middle-content h1 {
+    text-align: center;
+    margin: 1em;
+    padding: 0.25em;
+    color: #dfccbc;
+    font-family: 'Raleway', sans-serif;
+    text-shadow: 0 10px 0 #584b45;;
+    font-size: 40px;
+}
+.rotate-right {
+    position: absolute;
+    transform: rotate(90deg);
+    transform-origin: left;
+    left: 1.5em;
+    white-space: nowrap;
+}
+.rotate-left {
+    position: absolute;
+    transform: rotate(-90deg);
+    transform-origin: right;
+    right: 1.5em;
+    white-space: nowrap;
+}
+.left-content p, .right-content p {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+}
+.bottom-content p {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    margin-left: 0.5em;
+    position: absolute;
+    bottom: 0.2em;
+}
+#my-designs-page-content, #about-me-page-content, #contact-page-content {
+    display: none;
+    color: rgb(244, 244, 244);
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    margin: 1em;
+    background-attachment: fixed;
+}
+.exitBtn {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    margin-bottom: 0.5em;
+    padding: 0.2em;
+    background-color: #786961;
+    border: none;
+    border-radius: 5px;
+}
+.exitBtn:hover {
+    background-color: #655953;
+}
+#contact-page-content p {
+    margin: 1em;
+}
+#contact-page-content a {
+    color: #534741;
+}
+#contact-page-content a:hover {
+    color: #3e3733;
+}
+#about-me-page-content ul {
+    margin-left: 1em;
+}
+#my-designs-page-content h2, #about-me-page-content h2, #contact-page-content h2 {
+    color: #453b36;
+}
+
+/* Page Animations & Transitions*/
+.left-content:hover, .right-content:hover, .bottom-content:hover {
+    cursor: pointer;
+    background-color: #8a796b;
+}
+.left-content p:hover, .right-content p:hover, .bottom-content p:hover {
+    color: #463d39;
+    text-decoration: underline;
+}
+    /* My Designs Page Animations*/
+    @keyframes show-left {
+        0% {top: 50vh; bottom: 50vh; left: 0; right: 100vw;}
+        33.3% {top: calc((100vh - 50vh)/2); bottom: calc((100vh - 50vh)/2); left: 0; right: calc((100vw - 21.8vw));}
+        66.7% {top: 0; bottom: 0; left: 0; right: calc((100vw - 21.8vw));}
+        100% {top: 0; bottom: 0; left: 0; right: 0;}
+    }
+    #left-animation {
+        display: hidden;
+        position: absolute;
+        z-index: 1;
+        background-color: #998675;
+    }
+    .left-animation {
+        animation: show-left 2s ease-in-out -0.5s;
+        top: 0; bottom: 0; left: 0; right: 0;
+    }
+
+    /* My About Me Page Animations*/
+    @keyframes show-right {
+        0% {top: 50vh; bottom: 50vh; left: 100vw; right: 0;}
+        33.3% {top: calc((100vh - 50vh)/2); bottom: calc((100vh - 50vh)/2); left: calc((100vw - 21.8vw)); right: 0;}
+        66.7% {top: 0; bottom: 0; left: calc((100vw - 21.8vw)); right: 0;}
+        100% {top: 0; bottom: 0; left: 0; right: 0;}
+    }
+    #right-animation {
+        display: hidden;
+        position: absolute;
+        z-index: 1;
+        background-color: #998675;
+    }
+    .right-animation {
+        animation: show-right 2s ease-in-out -0.5s;
+        top: 0; bottom: 0; left: 0; right: 0;
+    }
+
+    /* My Contact Page Animations*/
+    @keyframes show-bottom {
+        0% {top: 100vh; bottom: 0; left: 50vw; right: 50vw;}
+        33.3% {top: calc((100vh - 23.5vh)); bottom: 0; left: calc((100vw - 50vw)/2); right: calc((100vw - 50vw)/2);}
+        66.7% {top: calc((100vh - 23.5vh)); bottom: 0; left: 0; right: 0;}
+        100% {top: 0; bottom: 0; left: 0; right: 0;}
+    }
+    #bottom-animation {
+        display: hidden;
+        position: absolute;
+        z-index: 1;
+        background-color: #998675;
+    }
+    .bottom-animation {
+        animation: show-bottom 2s ease-in-out -0.5s;
+        top: 0; bottom: 0; left: 0; right: 0;
+    }
+
